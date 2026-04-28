@@ -3,12 +3,12 @@
 
 class FeatureBranches < Formula
   desc 'Git feature branch management scripts with JIRA/GitHub/GitLab/BitBucket integration'
-  homepage 'https://github.com/john.bates/feature-branches'
+  homepage 'https://github.com/devstuff/feature-branches'
   # Update url and sha256 when publishing a release tarball.
-  # url "https://github.com/john.bates/feature-branches/archive/refs/tags/v1.0.0.tar.gz"
+  # url "https://github.com/devstuff/feature-branches/archive/refs/tags/v1.0.0.tar.gz"
   # sha256 "..."
   license 'MIT'
-  head 'https://github.com/john.bates/feature-branches.git', branch: 'main'
+  head 'https://github.com/devstuff/feature-branches.git', branch: 'main'
 
   # Runtime dependencies (recommended; features degrade gracefully without them).
   depends_on 'bash' => :build          # Requires Bash 4.3+; macOS ships 3.x.
@@ -55,6 +55,6 @@ class FeatureBranches < Formula
   end
 
   test do
-    system "#{bin}/git-default-branch", '--help'
+    system "#{bin}/git-default-branch"
   end
 end

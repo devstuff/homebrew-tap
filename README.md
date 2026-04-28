@@ -1,6 +1,7 @@
 # DevStuff Homebrew Tap
 
 This repository contains a collection of my [Homebrew](http://brew.sh/) (aka, Brew) "formulae".
+
 ## Usage
 
 First, add this tap to your Brew:

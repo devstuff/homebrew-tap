@@ -3,12 +3,12 @@
 
 class FeatureBranchesPython < Formula
   desc 'Git feature branch management (Python implementation)'
-  homepage 'https://github.com/john.bates/feature-branches'
+  homepage 'https://github.com/devstuff/feature-branches'
   # Update url and sha256 when publishing a release tarball.
-  # url 'https://github.com/john.bates/feature-branches/archive/refs/tags/python-v1.0.0.tar.gz'
+  # url 'https://github.com/devstuff/feature-branches/archive/refs/tags/v1.0.0.tar.gz'
   # sha256 '...'
   license 'MIT'
-  head 'https://github.com/john.bates/feature-branches.git', branch: 'main'
+  head 'https://github.com/devstuff/feature-branches.git', branch: 'main'
 
   depends_on 'python@3.14'
   depends_on 'gh'           # GitHub CLI (SCM_PROVIDER=github)
@@ -52,6 +52,6 @@ class FeatureBranchesPython < Formula
   end
 
   test do
-    system "#{bin}/git-remote-owner-repo", '--help'
+    system "#{bin}/git-default-branch"
   end
 end
