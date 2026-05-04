@@ -18,6 +18,8 @@ class FeatureBranchesPython < Formula
   #   brew install glab    # GitLab CLI (SCM_PROVIDER=gitlab)
   #   brew install bkt     # BitBucket CLI (SCM_PROVIDER=bitbucket)
 
+  depends_on 'devstuff/tap/feature-helpers'
+
   def install
     # Scripts in feature-branches-python/ are the installable artifacts.
     # The lib/ directory must be co-located with the scripts so that

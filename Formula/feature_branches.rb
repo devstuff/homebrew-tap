@@ -20,6 +20,8 @@ class FeatureBranches < Formula
   #   brew install glab               # GitLab CLI (SCM_PROVIDER=gitlab)
   #   brew install bkt                # BitBucket CLI (SCM_PROVIDER=bitbucket)
 
+  depends_on 'devstuff/tap/feature-helpers'
+
   def install
     # Install all executable scripts directly to bin/.
     executables = Dir['*'].select { |f| File.executable?(f) && File.file?(f) }
